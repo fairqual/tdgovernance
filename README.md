@@ -57,7 +57,7 @@ Use the Word document if your team writes in Word. Use the Markdown file if your
 
 Please cite the template if you use it.
 
-> Mohr, F., Chapman, M., & Simon, L. (2026). tdgovernance: Data Governance Concept Template for Transdisciplinary Research (Version 1.0.0). <https://github.com/fairqual/tdgovernance>
+> Mohr, F., Chapman, M., & Simon, L. (2026). tdgovernance: Data Governance Concept Template for Transdisciplinary Research (Version 0.1.0). <https://github.com/fairqual/tdgovernance>
 
 The citation metadata are in [CITATION.cff](CITATION.cff). On GitHub, "Cite this repository" in the sidebar gives the citation in APA and BibTeX format. A DOI follows with the first release.
 
