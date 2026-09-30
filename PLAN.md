@@ -8,7 +8,7 @@ This file holds the working plan while the repository is private. It is deleted 
 - [x] Leonhard Simon's ORCID: 0000-0002-8333-0632.
 - [x] Name in the citation is Leonhard Simon, as on the ORCID record (Lars, 2026-09-30).
 - [ ] Leonhard Simon's affiliation (Kintegra here, ETH Zurich on the ORCID record). In issue #1.
-- [ ] Licence confirmed (CC BY 4.0, as for the other FAIRqual repositories). In issue #1.
+- [x] Licence is CC BY 4.0, as for the other FAIRqual repositories (Lars, 2026-09-30).
 - [x] Spelling mistakes in the DOCX fixed and "Td" used throughout (2026-09-30).
 - [ ] Remaining points on the DOCX decided by the authors. In issue #1.
 
