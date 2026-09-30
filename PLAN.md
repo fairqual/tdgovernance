@@ -4,11 +4,12 @@ This file holds the working plan while the repository is private. It is deleted 
 
 ## Open before work continues
 
-- [ ] Author list confirmed (provisional: Franziska Mohr, Leon Simon, Mollie Chapman).
-- [ ] Author order confirmed, and whether two people share first authorship.
-- [ ] Leon Simon's ORCID and affiliation.
-- [ ] Licence confirmed (CC BY 4.0, as for the other FAIRqual repositories).
-- [ ] Franziska Mohr has corrected the DOCX (list of corrections below).
+- [x] Author list and order set by Lars on 2026-09-30: Franziska Mohr, Mollie Chapman, Leon Simon.
+- [x] Leon Simon's ORCID: 0000-0002-8333-0632.
+- [ ] Leon Simon's name in the citation (the ORCID record reads "Leonhard Simon") and his affiliation (Kintegra here, ETH Zurich on the ORCID record). In issue #1.
+- [ ] Licence confirmed (CC BY 4.0, as for the other FAIRqual repositories). In issue #1.
+- [x] Spelling mistakes in the DOCX fixed and "Td" used throughout (2026-09-30).
+- [ ] Remaining points on the DOCX decided by the authors. In issue #1.
 
 ## Context
 
@@ -19,14 +20,15 @@ Pattern to follow: `fairqual/dataitd24`. Its Zenodo record came from the GitHub 
 Decisions taken with Lars:
 
 - Name: `tdgovernance`. Zenodo title: "tdgovernance: Data Governance Concept Template for Transdisciplinary Research".
-- Authors are provisional. Full confirmation (list, order, ORCIDs, shared first authorship) is a release gate.
+- Authors and order, set by Lars on 2026-09-30: Mohr, Chapman, Simon.
 - Shared first authorship: neither CFF 1.2.0 nor Zenodo nor DataCite has a field for it (checked 2026-09-28 against the CFF person keys, CFF issue #363, which is still open, and Zenodo's CFF importer in zenodo-rdm `site/zenodo_rdm/github/schemas.py`). Author order carries the byline. The equal contribution goes into a sentence in CFF `message`, which Zenodo copies into the record's notes, and into the README "How to cite" section.
-- The .md mirrors the DOCX exactly. Errors go to Franziska as a list, she fixes the DOCX, then the .md is regenerated.
+- The .md mirrors the DOCX exactly. Spelling mistakes are fixed in the DOCX directly (Lars, 2026-09-30). Points that change wording or content go to the authors through issue #1. After any change to the DOCX, the .md is regenerated.
 - The repository stays private until the team check, then goes public right before the release (Zenodo only sees public repositories).
 
 ## Done so far
 
 - 2026-09-28: Lars created the private repository. First commit on `main` with LICENSE.md (CC BY 4.0, copied from dataitd24) and .gitignore. `dev` created with this plan.
+- 2026-09-30: Phase A done on `dev`: both source files copied and renamed, Markdown template, PNG, CITATION.cff, README.md, NEWS.md, committed and pushed. Six spelling fixes made in the DOCX (listed in issue #1), with only `word/document.xml` changed inside the file, and the .md regenerated from the corrected DOCX. Text match between DOCX and .md is empty, and `cffr::cff_validate()` passes. Remaining points are in issue #1. Franziska and Mollie have no GitHub usernames yet, so the collaborator invitations are open.
 
 ## Repository layout
 
@@ -52,37 +54,18 @@ Source files: `fairqual_template_DGC_27092028_noTC.docx` and `fairqual_data_gove
 1. Copy and rename the two source files.
 2. Markdown template with `pandoc -t gfm` from the DOCX (72-column wrap, like dataitd24). Clean only conversion artefacts: remove the `<!-- -->` list breaks in Phase 3, keep italics for guidance text, keep the bold-italic phase labels, keep the text word for word.
 3. PNG with `pdftoppm -png -r 200 -singlefile` from the PDF (GitHub cannot show a PDF inline).
-4. CITATION.cff, hand-written in the dataitd24 shape: `cff-version 1.2.0`, `type: software` (CFF only allows software or dataset, so the Zenodo type is fixed by hand later), `license: CC-BY-4.0`, `version: 1.0.0`, abstract from the template's "How to use" text, keywords (data governance, transdisciplinary research, qualitative data, FAIR, research data management, template), `repository-code`, `url`. Authors: Mohr (ORCID 0000-0002-8323-7032, TdLab ETH Zurich), Simon (Kintegra, ORCID to collect), Chapman (ORCID 0000-0003-1399-2144, TdLab ETH Zurich). Emails only for the contact entry, Mollie Chapman (project contact on the org profile since 2026-09-17). A comment line marks the author list as unconfirmed. If first authorship is shared, `message` reads for example: "If you use this template, please cite it using the metadata below. Franziska Mohr and Leon Simon contributed equally and share first authorship."
+4. CITATION.cff, hand-written in the dataitd24 shape: `cff-version 1.2.0`, `type: software` (CFF only allows software or dataset, so the Zenodo type is fixed by hand later), `license: CC-BY-4.0`, `version: 1.0.0`, abstract from the template's "How to use" text, keywords (data governance, transdisciplinary research, qualitative data, FAIR, research data management, template), `repository-code`, `url`. Authors: Mohr (ORCID 0000-0002-8323-7032, TdLab ETH Zurich), Chapman (ORCID 0000-0003-1399-2144, TdLab ETH Zurich), Simon (ORCID 0000-0002-8333-0632, Kintegra). Emails only for the contact entry, Mollie Chapman (project contact on the org profile since 2026-09-17). If first authorship is shared, `message` reads for example: "If you use this template, please cite it using the metadata below. Franziska Mohr and Leon Simon contributed equally and share first authorship."
 5. README.md in plain writing: what the concept is and why it exists (from the template's own "How to use" text), the figure, the three phases, the files with download links, how to use the DOCX and the .md, how to cite (DOI added after release), licence, funding (ORD Program of the ETH Board), contact, link to the website.
 6. NEWS.md: `# tdgovernance 1.0.0` with one entry for the first release.
 7. Keep this plan up to date as items close.
 8. Commit on `dev` (no prompts/ archive, since everything in the repository goes into the Zenodo archive), push `dev`.
-9. Draft a GitHub issue "Corrections to the DOCX before v1.0.0" with the list below. Show it to Lars and create it only after his OK. Add Franziska and Mollie as collaborators.
+9. Issue #1 "Open points on the template DOCX before v1.0.0" holds the points that are left. Add Franziska and Mollie as collaborators once they have GitHub usernames.
 
-### DOCX corrections list for Franziska (issue draft content)
-
-1. Abstract: "data government concept" should be "data governance concept".
-2. "Td approach" and "In a TD process" (How to use, Phase 2): pick one spelling. The project uses "Td".
-3. Phase 1: "Definition of the expected of outcomes" should be "Definition of the expected outcomes".
-4. Phase 1: "How will be these skill be put into practice, and how far will trainings be necessary?" could read "How will these skills be put into practice, and to what extent will training be necessary?"
-5. The question on who ensures the continuous update of the concept appears in Phase 1 and again in Phase 2 (worded slightly differently). Keep one, or confirm the repeat is on purpose.
-6. The question on mechanisms to review and update the concept appears in Phase 1 and again under "Potential revisions". Same choice.
-7. Phase 2, last item: question mark missing after "the way data is managed".
-8. Potential revisions: "Will there changes" should be "Will there be changes".
-9. Potential revisions: the parenthesis opened at "(e.g., do many want to share" is never closed.
-10. "Following questions should guide" and "Following questions guide" should start with "The following questions".
-11. "Data Governance Concept" and "data governance concept" are both used. Pick one.
-12. Phase headings and the figure: the figure calls the phases Framing, Enacting, Evaluating, while the template uses "raising the discussion", "Putting the plan into place", "Re-assessing and next steps". Adding the figure names would tie the two together.
-13. Phase 3 bullets are three separate lists in the DOCX (formatting only).
-14. Optional: place the figure in the "How to use this template" section.
-
-Work stops here until the authors are confirmed and Franziska has corrected the DOCX.
-
-## Phase B: after the DOCX corrections and the author check
+## Phase B: after issue #1 is closed
 
 1. Delete PLAN.md.
-2. Replace the DOCX with the corrected version and regenerate the .md with the same pandoc call.
-3. Update CITATION.cff with the confirmed authors, order, ORCIDs, and the shared first authorship sentence in `message` if it applies. Remove the "unconfirmed" comment.
+2. If the DOCX changed, regenerate the .md with the same pandoc call.
+3. Update CITATION.cff with Leon Simon's confirmed name and affiliation. Add `date-released`. Keep the citation in the README "How to cite" section in line with CITATION.cff.
 4. Commit on `dev`, open the pull request from `dev` into `main`, merge.
 
 ## Phase C: release (each step on Lars's go-ahead)
