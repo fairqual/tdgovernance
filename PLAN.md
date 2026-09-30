@@ -7,7 +7,7 @@ This file holds the working plan while the repository is private. It is deleted 
 - [x] Author list and order set by Lars on 2026-09-30: Franziska Mohr, Mollie Chapman, Leonhard Simon.
 - [x] Leonhard Simon's ORCID: 0000-0002-8333-0632.
 - [x] Name in the citation is Leonhard Simon, as on the ORCID record (Lars, 2026-09-30).
-- [ ] Leonhard Simon's affiliation (Kintegra here, ETH Zurich on the ORCID record). In issue #1.
+- [x] Leonhard Simon's affiliation is the Transdisciplinarity Lab, ETH Zurich, as for the other authors (Lars, 2026-09-30).
 - [x] Licence is CC BY 4.0, as for the other FAIRqual repositories (Lars, 2026-09-30).
 - [x] Spelling mistakes in the DOCX fixed and "Td" used throughout (2026-09-30).
 - [ ] Remaining points on the DOCX decided by the authors. In issue #1.
@@ -55,7 +55,7 @@ Source files: `fairqual_template_DGC_27092028_noTC.docx` and `fairqual_data_gove
 1. Copy and rename the two source files.
 2. Markdown template with `pandoc -t gfm` from the DOCX (72-column wrap, like dataitd24). Clean only conversion artefacts: remove the `<!-- -->` list breaks in Phase 3, keep italics for guidance text, keep the bold-italic phase labels, keep the text word for word.
 3. PNG with `pdftoppm -png -r 200 -singlefile` from the PDF (GitHub cannot show a PDF inline).
-4. CITATION.cff, hand-written in the dataitd24 shape: `cff-version 1.2.0`, `type: software` (CFF only allows software or dataset, so the Zenodo type is fixed by hand later), `license: CC-BY-4.0`, `version: 1.0.0`, abstract from the template's "How to use" text, keywords (data governance, transdisciplinary research, qualitative data, FAIR, research data management, template), `repository-code`, `url`. Authors: Mohr (ORCID 0000-0002-8323-7032, TdLab ETH Zurich), Chapman (ORCID 0000-0003-1399-2144, TdLab ETH Zurich), Simon (ORCID 0000-0002-8333-0632, Kintegra). Emails only for the contact entry, Mollie Chapman (project contact on the org profile since 2026-09-17). If first authorship is shared, `message` reads for example: "If you use this template, please cite it using the metadata below. Franziska Mohr and Leonhard Simon contributed equally and share first authorship."
+4. CITATION.cff, hand-written in the dataitd24 shape: `cff-version 1.2.0`, `type: software` (CFF only allows software or dataset, so the Zenodo type is fixed by hand later), `license: CC-BY-4.0`, `version: 1.0.0`, abstract from the template's "How to use" text, keywords (data governance, transdisciplinary research, qualitative data, FAIR, research data management, template), `repository-code`, `url`. Authors: Mohr (ORCID 0000-0002-8323-7032, TdLab ETH Zurich), Chapman (ORCID 0000-0003-1399-2144, TdLab ETH Zurich), Simon (ORCID 0000-0002-8333-0632, TdLab ETH Zurich). Emails only for the contact entry, Mollie Chapman (project contact on the org profile since 2026-09-17). If first authorship is shared, `message` reads for example: "If you use this template, please cite it using the metadata below. Franziska Mohr and Leonhard Simon contributed equally and share first authorship."
 5. README.md in plain writing: what the concept is and why it exists (from the template's own "How to use" text), the figure, the three phases, the files with download links, how to use the DOCX and the .md, how to cite (DOI added after release), licence, funding (ORD Program of the ETH Board), contact, link to the website.
 6. NEWS.md: `# tdgovernance 1.0.0` with one entry for the first release.
 7. Keep this plan up to date as items close.
@@ -66,7 +66,7 @@ Source files: `fairqual_template_DGC_27092028_noTC.docx` and `fairqual_data_gove
 
 1. Delete PLAN.md.
 2. If the DOCX changed, regenerate the .md with the same pandoc call.
-3. Update CITATION.cff with Leonhard Simon's confirmed affiliation. Add `date-released`. Keep the citation in the README "How to cite" section in line with CITATION.cff.
+3. Add `date-released` to CITATION.cff. Keep the citation in the README "How to cite" section in line with CITATION.cff.
 4. Commit on `dev`, open the pull request from `dev` into `main`, merge.
 
 ## Phase C: release (each step on Lars's go-ahead)
