@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: If you use this template, please cite it using the metadata below.
+type: software
+license: CC-BY-4.0
+title: 'tdgovernance: Data Governance Concept Template for Transdisciplinary Research'
+version: 0.1.0
+abstract: Template for a Data Governance Concept in transdisciplinary research, developed
+  in the FAIRqual project. The underlying idea of the Data Governance Concept is to
+  make data governance a functional element of a transdisciplinary approach that is
+  introduced at the start of a project for both researchers and practitioners. The
+  template guides a project team with questions through three phases. The phases shift
+  from data governance, to data management, where data are generated and handled day-to-day,
+  and eventually to data stewardship in the later phases of a project. The template
+  is available as DOCX and Markdown, together with a figure of the three phases and
+  the roles of researchers and practitioners in each phase.
+authors:
+- family-names: Mohr
+  given-names: Franziska
+  orcid: https://orcid.org/0000-0002-8323-7032
+  affiliation: Transdisciplinarity Lab, ETH Zurich
+- family-names: Chapman
+  given-names: Mollie
+  orcid: https://orcid.org/0000-0003-1399-2144
+  affiliation: Transdisciplinarity Lab, ETH Zurich
+- family-names: Simon
+  given-names: Leonhard
+  orcid: https://orcid.org/0000-0002-8333-0632
+  affiliation: Transdisciplinarity Lab, ETH Zurich
+keywords:
+- data governance
+- transdisciplinary research
+- qualitative data
+- FAIR
+- research data management
+- template
+repository-code: https://github.com/fairqual/tdgovernance
+url: https://github.com/fairqual/tdgovernance
+date-released: '2026-09-30'
+contact:
+- family-names: Chapman
+  given-names: Mollie
+  email: mollie.chapman@usys.ethz.ch
+  orcid: https://orcid.org/0000-0003-1399-2144
