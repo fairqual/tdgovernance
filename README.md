@@ -4,6 +4,8 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23062613.svg)](https://doi.org/10.5281/zenodo.23062613)
+
 <!-- badges: end -->
 
 ## About the template
@@ -57,9 +59,9 @@ Use the Word document if your team writes in Word. Use the Markdown file if your
 
 Please cite the template if you use it.
 
-> Mohr, F., Chapman, M., & Simon, L. (2026). tdgovernance: Data Governance Concept Template for Transdisciplinary Research (Version 0.1.0). <https://github.com/fairqual/tdgovernance>
+> Mohr, F., Chapman, M., & Simon, L. (2026). tdgovernance: Data Governance Concept Template for Transdisciplinary Research (Version 0.1.0). Zenodo. <https://doi.org/10.5281/zenodo.23062613>
 
-The citation metadata are in [CITATION.cff](CITATION.cff). On GitHub, "Cite this repository" in the sidebar gives the citation in APA and BibTeX format. A DOI follows with the first release.
+The citation metadata are in [CITATION.cff](CITATION.cff). On GitHub, "Cite this repository" in the sidebar gives the citation in APA and BibTeX format. The DOI 10.5281/zenodo.23062613 always leads to the latest version on Zenodo.
 
 ## Licence
 

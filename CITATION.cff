@@ -4,6 +4,7 @@ type: software
 license: CC-BY-4.0
 title: 'tdgovernance: Data Governance Concept Template for Transdisciplinary Research'
 version: 0.1.0
+doi: 10.5281/zenodo.23062613
 abstract: Template for a Data Governance Concept in transdisciplinary research, developed
   in the FAIRqual project. The underlying idea of the Data Governance Concept is to
   make data governance a functional element of a transdisciplinary approach that is
